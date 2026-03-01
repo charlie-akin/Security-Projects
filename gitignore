@@ -1,0 +1,76 @@
+# ============================================================
+# SECURITY-PROJECTS .gitignore
+# ============================================================
+# Review every file before committing. When in doubt, leave it out.
+# ============================================================
+
+# --- Credentials & Secrets
+*.env
+.env
+.env.*
+config.ini
+secrets.json
+credentials.json
+aws_credentials
+*.key
+*.pem
+*.p12
+*.pfx
+
+# --- AWS ---
+.aws/
+aws-exports.js
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# --- Jupyter Notebooks (outputs can contain sensitive data) ---
+.ipynb_checkpoints/
+# Uncomment below if you want to strip outputs before committing
+# *.ipynb
+
+# --- Nessus / Scan Files ---
+# Raw scan files can contain sensitive target info - share PDFs only
+*.nessus
+*.xml
+
+# --- Packet Captures ---
+# Only commit sanitized/anonymized PCAPs
+# *.pcap
+# *.pcapng
+
+# --- API Keys (common locations) ---
+api_keys.txt
+api_keys.json
+*.token
+
+# --- OS Clutter ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Temp Files ---
+*.tmp
+*.bak
+*.orig
